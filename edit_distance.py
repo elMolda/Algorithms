@@ -1,3 +1,4 @@
+
 def distance_bf(str1,str2):
   if len(str1) == 0:
     return len(str2)
@@ -30,6 +31,5 @@ def distance_dyn(str1, str2):
 
   return d[len(str1)][len(str2)]
 
-print(distance_bf("tigre","trigo"))
 print(distance_dyn("tigre","trigo"))
 

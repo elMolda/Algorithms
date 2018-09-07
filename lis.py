@@ -1,5 +1,6 @@
 import math
 
+
 def lis_aux(arr):
 	return lis_bf(arr,-math.inf,0)
 
@@ -62,8 +63,8 @@ def lis(arr):
 
 arr = [5,2,8,6,3,6,9,7]
 ans = lis(arr)
-print("Length of lis is", ans[0])
-print("The longest sequence is", ", ".join(str(x) for x in ans[1]))
+print("Longitud de LIS", ans[0])
+print("Una LIS posible", ", ".join(str(x) for x in ans[1]))
 
 '''print(lis_aux([5,2,8,6,3,6,9,7]))
 print(lis_memo_aux([5,2,8,6,3,6,9,7]))'''
