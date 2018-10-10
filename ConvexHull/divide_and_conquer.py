@@ -41,10 +41,11 @@ def get_points_left(start, end, points):
 	return left_points
 
 '''
-Cross product to find where c belongs in reference to vector ab.
-* If result > 0 it means 'c' is on left of ab
-*    result == 0 it means 'a','b' and 'c' are collinear
-*    result < 0  it means 'c' is on right of ab
+Donde está el punto c en relacion al vector ab
+Retorna
+	> 0 c está a la izquierda de ab
+	= 0 los tres puntos son colineales
+	< 0 c está a la derecha de ab
 '''
 def crossProdcut(a,b,c):
 	y1 = a.y - b.y

@@ -19,6 +19,13 @@ def distance(a,b,c):
 	else:
 		return 1
 
+'''
+Donde está el punto c en relacion al vector ab
+Retorna
+	> 0 c está a la izquierda de ab
+	= 0 los tres puntos son colineales
+	< 0 c está a la derecha de ab
+'''
 def crossProdcut(a,b,c):
 	y1 = a.y - b.y
 	y2 = a.y - c.y
@@ -69,21 +76,6 @@ fig = str(sys.argv[2])
 a = int(sys.argv[3])
 b = int(sys.argv[4])
 r = float(sys.argv[5])
-'''sample = []
-	a1 = Point(0, 0)
-	a2 = Point(0, 4)
-	a3 = Point(-4, 0)
-	a4 = Point(5, 0)
-	a5 = Point(0, -6)
-	a6 = Point(1, 0)
-	sample.append(a1)
-	sample.append(a2)
-	sample.append(a3)
-	sample.append(a4)
-	sample.append(a5)
-	sample.append(a6)'''
-
-
 
 if fig == 'r':
 	sample  = rectangular_sample(n,a,b,r)
