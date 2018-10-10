@@ -103,7 +103,8 @@ elif fig == 'e':
 
 start_time = time.time()
 hull = dac_hull(sample)
-print("--- Divide & Conquer took "+ str(time.time() - start_time) +" seconds for n= "+str(n) )
+used_time = time.time() - start_time
+
 
 
 x_hull = []
@@ -123,3 +124,5 @@ for i in range(len(sample)):
 plt.scatter(x,y)
 plt.scatter(x_hull,y_hull,facecolor='red')
 plt.show()
+
+print("--- Divide & Conquer took "+ str(used_time) +" seconds for n= "+str(n) )
