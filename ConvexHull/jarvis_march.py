@@ -1,4 +1,5 @@
 import sys
+import time
 from Point import Point
 import matplotlib.pyplot as plt
 from sampler import rectangular_sample, eliptical_sample
@@ -90,7 +91,9 @@ if fig == 'r':
 elif fig == 'e':
 	sample  = eliptical_sample(n,a,b,r)
 
+start_time = time.time()
 hull = jarvis_hull(sample)
+print("--- Javis March took "+ str(time.time() - start_time) +" seconds for n= "+str(n) )
 		
 x_hull = []
 y_hull = []

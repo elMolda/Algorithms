@@ -1,4 +1,5 @@
 import sys
+import time
 import math
 from Point import Point
 import matplotlib.pyplot as plt
@@ -99,7 +100,10 @@ if fig == 'r':
 elif fig == 'e':
 	sample  = eliptical_sample(n,a,b,r)
 
+start_time = time.time()
 hull = dac_hull(sample)
+print("--- Divide & Conquer took "+ str(time.time() - start_time) +" seconds for n= "+str(n) )
+
 
 x_hull = []
 y_hull = []
