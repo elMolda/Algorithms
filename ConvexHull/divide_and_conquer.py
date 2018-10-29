@@ -15,8 +15,6 @@ def dac_hull(points):
 
 	return hull
 
-
-
 def dac_hull_aux(points, min_p, max_p):
 	left_points = get_points_left(min_p, max_p, points)
 
@@ -105,8 +103,6 @@ start_time = time.time()
 hull = dac_hull(sample)
 used_time = time.time() - start_time
 
-
-
 x_hull = []
 y_hull = []
 
@@ -122,7 +118,8 @@ for i in range(len(sample)):
 	y.append(sample[i].y)
 
 plt.scatter(x,y)
-plt.scatter(x_hull,y_hull,facecolor='red')
+plt.plot(x_hull,y_hull)
+plt.title('Divide and Conquer')
 plt.show()
 
 print("--- Divide & Conquer took "+ str(used_time) +" seconds for n= "+str(n) )

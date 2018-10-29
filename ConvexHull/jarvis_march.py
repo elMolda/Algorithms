@@ -86,15 +86,27 @@ elif fig == 'e':
 start_time = time.time()
 hull = jarvis_hull(sample)
 used_time = time.time() - start_time
-
-		
+	
 x_hull = []
 y_hull = []
+lista = list(hull)
+lista.sort(key=lambda x: x.x)#O(n log n)
 
-for p in hull:
-	print(str(p))
-	x_hull.append(p.x)
-	y_hull.append(p.y)
+i = 0
+while i< len(lista)/2: 
+	x_hull.append(lista[i].x)
+	y_hull.append(lista[i].y)
+	i = i + 1
+          
+j = len(lista) - 1
+while j >= len(lista)/2: 
+	x_hull.append(lista[j].x)
+	y_hull.append(lista[j].y)
+	j = j - 1
+
+for i in range(len(lista)):
+	print("("+str(x_hull[i])+","+str(y_hull[i])+")")
+
 
 x = []
 y = []
@@ -103,7 +115,10 @@ for i in range(len(sample)):
 	y.append(sample[i].y)
 
 plt.scatter(x,y)
-plt.scatter(x_hull,y_hull,facecolor='red')
+for k in range(len(x_hull)):
+	plt.plot(x_hull[k:k+2],y_hull[k:k+2])
+	
+plt.title('Jarvis March')
 plt.show()
 print("--- Javis March took "+ str(used_time) +" seconds for n= "+str(n) )
 

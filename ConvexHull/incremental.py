@@ -59,7 +59,6 @@ start_time = time.time()
 hull = incremental_hull(sample)
 used_time = time.time() - start_time
 
-
 x_hull = []
 y_hull = []
 
@@ -67,6 +66,8 @@ for p in hull:
 	print(str(p))
 	x_hull.append(p.x)
 	y_hull.append(p.y)
+x_hull.append(x_hull[0])
+y_hull.append(y_hull[0])
 
 x = []
 y = []
@@ -74,7 +75,10 @@ for i in range(len(sample)):
 	x.append(sample[i].x)
 	y.append(sample[i].y)
 
+
 plt.scatter(x,y)
-plt.scatter(x_hull,y_hull,facecolor='red')
+plt.plot(x_hull,y_hull,color='red')
+plt.title('Jarvis March')
 plt.show()
+
 print("--- Incremental took "+ str(used_time) +" seconds for n= "+str(n) )

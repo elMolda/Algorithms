@@ -1,0 +1,21 @@
+							INSTRUCCIONES DE USO
+
+RECUERDE QUE TODOS LOS ARCHIVOS QUE CONTIENE LA CARPETA DEBEN ESTAR EN LA MISMA UBICACION
+
+Abra una terminal de la linea de comandos en la Carpeta que contiene los archivos de codigo fuente.
+
+Digite la instruccion python3 algoritmo_a_probar.py n f a b r donde
+	algoritmo_a_probar es el nombre del algoritmo que desea probar.
+		Puede ser:
+			incremental.py
+			jarvis_march.py
+			divide_and_conquer.py
+	n es el numero de puntos con los que desea realizar la prueba.
+	f es la figura con la que desea que se distribuyan los puntos.
+		Puede ser:
+			r para rectangulo
+			e para elipse
+	a es el ancho de la figura.
+	b es alto de la figura.
+	r es el angulo de rotacion con el que desea que se roten los puntos.
+	
