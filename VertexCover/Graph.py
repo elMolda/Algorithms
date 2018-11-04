@@ -14,15 +14,3 @@ class Graph:
                 graph_str += start + ' ' + stop + '\n'
                 
         return graph_str
-            
-
-def check_vertex_cover(G, S):
-        
-    for start in G.E.keys():
-        if start in S:
-            continue
-        for end in G.E[start]:
-            if not (end in S):
-                return False
-
-    return True
