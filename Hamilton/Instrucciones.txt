@@ -1,0 +1,21 @@
+INSTRUCCIONES DE USO
+
+RECUERDE TENER EN UNA MISMA UBICACION TODOS LOS ARCHIVOS .TXT DE LOS GRAFOS Y LOS DE CODIGO FUENTE (extension .cxx y .py)
+Los archivos de los grafos se encuentran por organizacion en la carpeta Grafos. Puede copiar los de codigo fuente a dicha carpeta o 
+copiar los de los grafos a la carpeta actual.
+
+Abra una terminal de la linea de comandos en la Carpeta que escogio y contiene los archivos de codigo fuente y los .txt de los grafos.
+
+Para probar el algoritmo de Fuerza Bruta digite la instruccion g++ -std=c++11 hamilton_BF.cxx -o nombre_ejecutable
+    donde nombre_ejecutable es el nombre del archivo ejecutable que se queire crear del programa
+    y para correr dicho archivo digite la instruccion
+    ./nombre_ejecutable 
+
+Para probar el algoritmo de Aproximacion con Prim digite la instruccion python3 prim.py
+
+Ud puede generar otros grafos aleatorios. Para hacerlo descomente la seccion del archivo hamilton_BF.cxx 
+marcada con el aviso //Codigo que genera los 100 grafos aleatorios y siga las instrucciones para probar el algoritmo de fuerza bruta.
+Una vez hecho esto puede correr sobre estos nuevos grafos el algoritmo de Aproximacion.
+
+
+	
