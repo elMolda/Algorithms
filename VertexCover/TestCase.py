@@ -54,7 +54,7 @@ edges['g'].append('d')
 edges['e'].append('f')
 edges['f'].append('e')'''
 
-fout = open("sizes.txt",'w')
+fout = open("sizes2.txt",'w')
 for i in range(0,101):
         G = random_graph()#Graph(vertices, edges)
         aprox = aprox_VC(G)
