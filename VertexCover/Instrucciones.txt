@@ -1,0 +1,14 @@
+INSTRUCCIONES DE USO
+
+RECUERDE TENER EN UNA MISMA UBICACION TODOS LOS ARCHIVOS .py DE CODIGO FUENTE 
+
+Abra una terminal de la linea de comandos en la Carpeta que escogio y contiene los archivos de codigo fuente.
+
+La prueba de ejecucion de los algoritmos se hace en un mismo programa.
+    El comando que ejecuta los algoritmos y genera el archivo de salida es:
+    python3 TestCase.py
+Esta instruccion genera un archivo llamado sizes.txt, que tiene el formato
+    tamaño_fuerza_bruta,tamaño_aproximacion
+
+
+	
